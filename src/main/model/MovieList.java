@@ -29,12 +29,18 @@ public class MovieList implements Writable {
     // MODIFIES: this
     // EFFECTS: adds given movie to watchlist
     public void addMovie(Movie movie) {
+        String title = movie.getTitle();
+        int year = movie.getYear();
+        EventLog.getInstance().logEvent(new Event(title + " (" + year + ") added to " + name + "."));
         watchlist.add(movie);
     }
 
     // MODIFIES: this
     // EFFECTS: removes given movie from watchlist
     public void removeMovie(Movie movie) {
+        String title = movie.getTitle();
+        int year = movie.getYear();
+        EventLog.getInstance().logEvent(new Event(title + " (" + year + ") removed from " + name + "."));
         watchlist.remove(movie);
     }
 

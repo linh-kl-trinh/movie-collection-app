@@ -1,6 +1,6 @@
 # Movie Collection Application
 
-A simple application with graphic user interface that allows you to keep track of all the movies you plan to watch, are watching, 
+A simple Java application with Swing graphic user interface that allows you to keep track of all the movies you plan to watch, are watching, 
 have watched or already dropped.
 
 ## Features
